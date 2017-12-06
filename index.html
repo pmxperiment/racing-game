@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="app.js" type="text/javascript"></script>
 <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
 <title>Swimmin' With The Fishes</title>
 </head>
@@ -11,6 +12,9 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous">
  </script>
+
+
+<input onkeydown="myFunction(event)"> 
 
 
 <div id="header">
@@ -40,29 +44,28 @@
 </div>
 
 
-
 <script>
 		$('#fishButton1').click(function(){
 	$("#wow2").animate({
 	"margin-top":"0px",
-	"margin-left":"+=300px"
+	"margin-left":"+=200px"
 }, 300, "swing", function() {
 	console.log("I'm on the move!");
 });
 });
 </script>
 
+
 <script>
 		$('#fishButton2').click(function(){
 	$("#wow").animate({
 	"margin-top":"0px",
-	"margin-left":"+=300px"
+	"margin-left":"+=200px"
 }, 300, "swing", function() {
 	console.log("Fish 2 on the move!");
 });
 });
 </script>
-
 
 
 </body>
