@@ -1,9 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Racing Game</title>
+<link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+<title>Swimmin' With The Fishes</title>
 </head>
+
 <body>
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+ </script>
+
+
+<div id="header">
+	<h1>FASTEST FISH WINS!!!</h1>
+</div>
+
+<ul>
+<li> Your're in SHARK infested waters! </li>
+<li> CLICK TO EVADE THE SHARKS</li>
+</ul>
+
+
+<div>
+<div id="goButtonGroup">
+</div>
+<button id="fishButton1">FISH ONE GO!</button>
+<button id="fishButton2">FISH TWO GO!</button>
+</div>
+<div>
+
+
+<div>
+<img id="wow2" src="https://www.shareicon.net/data/256x256/2016/08/18/809963_animal_512x512.png">
+</div>
+<div>
+<img id="wow" src="https://www.shareicon.net/data/256x256/2016/08/18/809963_animal_512x512.png">
+</div>
+
+
+
+<script>
+		$('#fishButton1').click(function(){
+	$("#wow2").animate({
+	"margin-top":"0px",
+	"margin-left":"+=300px"
+}, 300, "swing", function() {
+	console.log("I'm on the move!");
+});
+});
+</script>
+
+<script>
+		$('#fishButton2').click(function(){
+	$("#wow").animate({
+	"margin-top":"0px",
+	"margin-left":"+=300px"
+}, 300, "swing", function() {
+	console.log("Fish 2 on the move!");
+});
+});
+</script>
+
 
 
 </body>
